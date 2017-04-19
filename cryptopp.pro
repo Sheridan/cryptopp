@@ -5,7 +5,10 @@
 TEMPLATE = lib
 TARGET = cryptopp
 CONFIG += c++11 static
-QMAKE_CXXFLAGS += -std=c++11 -march=i686 -mtune=generic
+QMAKE_CXXFLAGS += -std=c++11
+win32 {
+    QMAKE_CXXFLAGS += -march=i686 -mtune=generic
+}
 DEPENDPATH += .
 INCLUDEPATH += .
 
