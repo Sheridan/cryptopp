@@ -11,6 +11,7 @@ win32 {
 }
 DEPENDPATH += .
 INCLUDEPATH += .
+DEFINES += CRYPTOPP_WANT_SECURE_LIB
 
 # Input
 HEADERS += 3way.h \
